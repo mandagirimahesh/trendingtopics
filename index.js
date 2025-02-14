@@ -9,7 +9,8 @@ async function fetchArticles() {
         if (!res.ok) throw new Error(`Error ${res.status}`);
 
         const jsondata = await res.json();
-        allArticles = jsondata.articles; // Store all articles
+        let allArticlesorg = jsondata.articles; // Store all articles
+        allArticles = allArticlesorg.reverse()
         displayArticles();
         displayPagination();
         displayAsideArticles();

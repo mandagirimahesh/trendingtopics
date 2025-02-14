@@ -1,4 +1,6 @@
 async function main() {
+    let favicon = document.getElementsByTagName('head')[0];
+    favicon.innerHTML += `<link rel="icon" type="image/x-icon" href="https://www.svgrepo.com/show/353388/amazon-chime.svg">`
     try {
         const res = await fetch('../news.json')
         if (!res.ok) {
@@ -36,7 +38,7 @@ async function main() {
         data-full-width-responsive="true"></ins>
         `
 
-        let updatedContent = artcle.body.replace(/\n\n/g, `</p><br>${adcode}<p>`);
+        let updatedContent = artcle.body.replace(/\n\n/g, `</p>${adcode}<p>`);
 
 
         heading.innerText = artcle.title
