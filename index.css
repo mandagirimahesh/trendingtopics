@@ -91,11 +91,11 @@
             }
 
             a:hover {
-                box-shadow: 0 0 15px #cccccc;
+                /* box-shadow: 0 0 15px #cccccc; */
                 border-radius: 5px;
 
                 img {
-                    scale: 1.05;
+                    scale: 1.04;
                     transition: all .5s;
                 }
 
@@ -111,7 +111,7 @@
                 height: 150px;
                 width: 200px;
                 object-fit: cover;
-                margin-right: 20px;
+                margin-right: 15px;
             }
 
             div {
