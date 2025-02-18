@@ -1,6 +1,5 @@
-
 let currentPage = 1;
-const articlesPerPage = 5; // Show 5 articles per page
+const articlesPerPage = 5;
 let allArticles = [];
 
 async function fetchArticles() {
@@ -10,10 +9,13 @@ async function fetchArticles() {
 
         const jsondata = await res.json();
         let allArticlesorg = jsondata.articles;
-        allArticles = allArticlesorg.reverse()
+
+        // Reverse and remove duplicates
+        allArticles = allArticlesorg.reverse();
         displayArticles();
         displayPagination();
         displayAsideArticles();
+        displayNavLabels(); // Display unique labels
     } catch (error) {
         console.error(error);
     }
@@ -28,26 +30,20 @@ function displayArticles() {
     let articlesToShow = allArticles.slice(start, end);
 
     articlesToShow.forEach(article => {
-        // labels
-        let navlist = document.getElementById('nav-ul')
-        navlist.innerHTML += `<li class="navlist"><a class="navlista" href="#">${article.label}</a></li>`
-
         let articleElement = document.createElement("a");
         articleElement.href = `./articles/${article.number}.html`;
         articleElement.classList.add("article");
 
         articleElement.innerHTML = `
-                <img src="${article.image}" alt="">
-                <div>
-                    <h2 class="topic-title">${article.title}</h2>
-                    <p>${article.body}</p>
-                </div>
-            `;
+            <img src="${article.image}" alt="">
+            <div>
+                <h2 class="topic-title">${article.title}</h2>
+                <p>${article.body}</p>
+            </div>
+        `;
 
         articlesdiv.appendChild(articleElement);
     });
-
-    attachClickListeners(); // Attach event listeners
 }
 
 function displayPagination() {
@@ -58,9 +54,11 @@ function displayPagination() {
     for (let i = 1; i <= totalPages; i++) {
         let button = document.createElement("button");
         button.innerText = i;
+        button.className = i === currentPage ? "active" : "";
         button.onclick = () => {
             currentPage = i;
             displayArticles();
+            displayPagination(); // Refresh pagination to highlight current page
         };
         paginationContainer.appendChild(button);
     }
@@ -70,7 +68,8 @@ function displayAsideArticles() {
     let aadiv = document.getElementById('aadiv');
     aadiv.innerHTML = ""; // Clear previous aside articles
 
-    allArticles.forEach(article => {
+    let latestArticles = allArticles.slice(0, 10); // Show only the latest 10 articles
+    latestArticles.forEach(article => {
         let asideLink = document.createElement("a");
         asideLink.href = `./articles/${article.number}.html`;
         asideLink.innerText = article.title;
@@ -78,16 +77,23 @@ function displayAsideArticles() {
     });
 }
 
-function attachClickListeners() {
-    document.querySelectorAll('.article').forEach(article => {
-        article.addEventListener("click", function () {
-            let title = this.querySelector(".topic-title").textContent;
-            console.log(title);
-        });
+function displayNavLabels() {
+    let navlist = document.getElementById('nav-ul');
+    navlist.innerHTML = ""; // Clear existing labels
+
+    let uniqueLabels = new Set();
+    allArticles.forEach(article => uniqueLabels.add(article.label));
+
+    uniqueLabels.forEach(label => {
+        let listItem = document.createElement("li");
+        listItem.classList.add("navlist");
+        listItem.innerHTML = `<a class="navlista" href="#">${label}</a>`;
+        navlist.appendChild(listItem);
     });
 }
 
 fetchArticles(); // Load articles on page load
+
 
 
 
