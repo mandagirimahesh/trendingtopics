@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 769px) {
     p {
-        text-align: justify;
+        /* text-align: justify; */
     }
 
     body {
@@ -111,8 +111,8 @@
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
     p {
-        font-size: small;
-        text-align: justify;
+        font-size: medium;
+        /* text-align: justify; */
     }
 
     body {

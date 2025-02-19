@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "IT Support Specialist",
+    "type": "full-time",
+    "description": "Install and configure software and hardware solutions, focusing on client digital signatures and overall technological support.",
+    "details": "Provide technical support to employees regarding software, hardware, and network-related issues. Troubleshoot and resolve IT problems promptly to minimize downtime.",
+    "qualification": "Experience in software and hardware management.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-17"
+  },
+  {
+    "id": 2,
+    "title": "Receptionist/Administrator",
+    "type": "full-time",
+    "description": "Handle both incoming and outgoing calls.",
+    "details": "Provide administrative support with basic IT knowledge. Able to speak English and Telugu.",
+    "qualification": "Good communication skills.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-15"
+  },
+  {
+    "id": 3,
+    "title": "Domestic IT Recruiter",
+    "type": "full-time",
+    "description": "Proficiency in using job portals and applicant tracking systems (ATS).",
+    "details": "Bachelor’s degree in Human Resources, IT, or related field.",
+    "qualification": "Experience in IT recruitment.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-18"
+  },
+  {
+    "id": 4,
+    "title": "IT Helpdesk Coordinator",
+    "type": "full-time",
+    "description": "Serve as the first point of contact for internal IT-related inquiries.",
+    "details": "Provide support via phone, email, or ticketing system.",
+    "qualification": "Experience in IT helpdesk support.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-16"
+  },
+  {
+    "id": 5,
+    "title": "IT Executive",
+    "type": "full-time",
+    "description": "Provide technical support to employees regarding software, hardware, and network-related issues.",
+    "details": "Troubleshoot and resolve IT problems promptly to minimize downtime.",
+    "qualification": "Experience in IT support and administration.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-18"
+  },
+  {
+    "id": 6,
+    "title": "Freshers Hiring for IT Positions - Pronix Talent Hunt",
+    "type": "full-time",
+    "description": "Software Development Engineers (Entry Level/Junior Level).",
+    "details": "Involvement in Software Development Life Cycle, Agile/Scrum Development.",
+    "qualification": "Knowledge in .NET/Angular/React/API/Python/SQL.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-01-19"
+  },
+  {
+    "id": 7,
+    "title": "IT Support Engineer",
+    "type": "full-time",
+    "description": "Experience in telephony – Pbx/IP / networking /wifi.",
+    "details": "Bachelor's degree in Engineering, Information Technology, or similar.",
+    "qualification": "1-2 years of relevant experience.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-16"
+  },
+  {
+    "id": 8,
+    "title": "Assistant Manager - IT",
+    "type": "full-time",
+    "description": "Daily monitoring of servers and network.",
+    "details": "Administering Windows Server 2022 (Active Directory, Group Policy, DHCP, DNS, WDS, WSUS, printer pooling, Hyper-V, etc.).",
+    "qualification": "Experience in server and network administration.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-15"
+  },
+  {
+    "id": 9,
+    "title": "IT Executive",
+    "type": "full-time",
+    "description": "Provide technical support to employees regarding software, hardware, and network-related issues.",
+    "details": "Troubleshoot and resolve IT problems promptly to minimize downtime.",
+    "qualification": "Experience in IT support and administration.",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-15"
+  },
+  {
+    "id": 10,
+    "title": "IT Engineer",
+    "type": "full-time",
+    "description": "Database management using MS SQL Server.",
+    "details": "Server configuration and deployment with IIS Server.",
+    "qualification": "Total work: 5 years (Preferred).",
+    "link": "https://in.indeed.com/IT-jobs-in-Hyderabad",
+    "date": "2025-02-14"
+  },
+  {
+    "id": 1,
+    "title": "Frontend Engineer",
+    "type": "full-time",
+    "description": "Develop and maintain scalable, high-performance web applications that deliver seamless user experiences.",
+    "details": "Collaborate with cross-functional teams to implement responsive, accessible, and user-centric interfaces using modern frontend frameworks.",
+    "qualification": "Bachelor’s degree in Computer Science or related field; 4+ years of experience in frontend development.",
+    "link": "https://in.indeed.com/q-frontend-developer-l-hyderabad%2C-telangana-jobs.html",
+    "date": "2024-11-25"
+  },
+  {
+    "id": 2,
+    "title": "Front End Developer",
+    "type": "full-time",
+    "description": "Design and develop dynamic, high-performing platforms using Next.js.",
+    "details": "Collaborate with the team to create seamless user experiences, focusing on both UI/UX and backend functionality.",
+    "qualification": "Minimum of 2 years of experience with Next.js or React-based frameworks.",
+    "link": "https://in.indeed.com/q-frontend-developer-l-hyderabad%2C-telangana-jobs.html",
+    "date": "2024-12-01"
+  },
+  {
+    "id": 3,
+    "title": "Junior Front End Developer",
+    "type": "full-time",
+    "description": "Developing and maintaining web applications optimized for various devices and browsers.",
+    "details": "Collaborate with designers and backend developers to create responsive and user-friendly web applications.",
+    "qualification": "1-3 years of experience in front-end development.",
+    "link": "https://www.glassdoor.com/Job/hyderabad-front-end-developer-jobs-SRCH_IL.0%2C9_IM1076_KO10%2C29.htm",
+    "date": "2024-12-15"
+  },
+  {
+    "id": 4,
+    "title": "Front-end Developer",
+    "type": "full-time",
+    "description": "Develop front-end application features using HTML5, CSS3, and JavaScript.",
+    "details": "Participate in requirement analysis, design, coding, implementation, and testing of web applications.",
+    "qualification": "3+ years of experience in front-end development with proficiency in modern frameworks.",
+    "link": "https://cutshort.io/job/Frontend-Developer-Analytics-Hyderabad-Invesco-ik1JmiB8",
+    "date": "2024-12-20"
+  },
+  {
+    "id": 5,
+    "title": "FRONT-END DEVELOPER",
+    "type": "full-time",
+    "description": "Integrate front-end design into backend work and ensure responsive, clean code.",
+    "details": "Collaborate with cross-functional teams to deliver high-quality web applications.",
+    "qualification": "Experience in front-end development with knowledge of web technologies.",
+    "link": "https://www.glassdoor.com/Job/hyderabad-front-end-developer-jobs-SRCH_IL.0%2C9_IM1076_KO10%2C29.htm",
+    "date": "2024-12-10"
+  },
+  {
+    "id": 6,
+    "title": "Front-end Developer",
+    "type": "full-time",
+    "description": "Develop web applications using HTML, CSS, Bootstrap, and JavaScript.",
+    "details": "Collaborate with product owners and technical leaders to implement responsive and user-centric interfaces.",
+    "qualification": "2-6 years of experience in front-end development.",
+    "link": "https://cutshort.io/job/Frontend-Developer-Hyderabad-Dvara-ERegistry-Kg5W8YAN",
+    "date": "2024-12-18"
+  },
+  {
+    "id": 7,
+    "title": "Front End Developer",
+    "type": "full-time",
+    "description": "Design and develop web applications using AngularJS 6 or above.",
+    "details": "Work closely with cross-functional teams to deliver high-quality and on-time delivery of web applications.",
+    "qualification": "5-8 years of experience in web application development with at least 5 years in AngularJS.",
+    "link": "https://cutshort.io/job/Frontend-Developer-Hyderabad-Dvara-ERegistry-Kg5W8YAN",
+    "date": "2024-12-22"
+  },
+  {
+    "id": 8,
+    "title": "Frontend Developer",
+    "type": "full-time",
+    "description": "Develop and maintain user-facing features for web applications.",
+    "details": "Collaborate with designers and backend developers to implement interactive and responsive web interfaces.",
+    "qualification": "Proficiency in HTML, CSS, JavaScript, and experience with modern frameworks like React or Angular.",
+    "link": "https://in.indeed.com/q-frontend-developer-l-hyderabad%2C-telangana-jobs.html",
+    "date": "2024-12-05"
+  },
+  {
+    "id": 9,
+    "title": "Senior Front End Developer",
+    "type": "full-time",
+    "description": "Lead the development of complex web applications with a focus on performance and scalability.",
+    "details": "Mentor junior developers and collaborate with cross-functional teams to deliver high-quality products.",
+    "qualification": "7+ years of experience in front-end development with expertise in JavaScript frameworks.",
+    "link": "https://www.glassdoor.com/Job/hyderabad-front-end-developer-jobs-SRCH_IL.0%2C9_IM1076_KO10%2C29.htm",
+    "date": "2024-12-08"
+  },
+  {
+    "id": 10,
+    "title": "React.js Developer",
+    "type": "full-time",
+    "description": "Develop new user-facing features using React.js.",
+    "details": "Build reusable components and front-end libraries for future use.",
+    "qualification": "Strong proficiency in JavaScript and experience with React.js.",
+    "link": "https://cutshort.io/job/Frontend-Developer-Analytics-Hyderabad-Invesco-ik1JmiB8",
+    "date": "2024-12-12"
+  }
+]
