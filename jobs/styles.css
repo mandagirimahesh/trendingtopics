@@ -109,3 +109,17 @@ footer {
 #apply-button:hover {
     background-color: #555;
 }
+
+@media screen and (max-width: 600px) {
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+}
