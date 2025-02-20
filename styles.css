@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#search-bar {
+    display: flex;
+    gap: 10px;
+    order: 3;
+    margin-left: auto;
+}
+
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 8px 12px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #ff4500;
+}
+
+#nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    order: 2;
+    flex: 1;
+    justify-content: center;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#nav-ul.show {
+    max-height: 500px;
+}
+
+#nav-ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-ul li a:hover {
+    color: #ff6347;
+}
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    order: 1;
+}
+
+#menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-switch {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+#nav-left-switch {
+    order: 0;
+}
+
+#nav-right-switch {
+    order: 4;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#articles {
+    flex: 3;
+}
+
+.article {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.article h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.article p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#pagination {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #555;
+}
+
+#pagination button.active {
+    background-color: #ff6347;
+}
+
+#aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#aside h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#aside-articles a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+#aside-articles a:hover {
+    color: #ff6347;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #articles,
+    #aside {
+        flex: 1;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-bar {
+        width: 100%;
+        order: 2;
+        margin-left: 0;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    #nav-ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #nav-ul.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: flex;
+    }
+
+    .nav-switch {
+        display: none;
+    }
+
+    .article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-switch {
+        display: none;
+    }
+
+    #nav-ul {
+        max-height: none;
+        overflow: visible;
+    }
+}
