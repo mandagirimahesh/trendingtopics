@@ -35,8 +35,8 @@ nav {
 
 #home-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6347;
+    padding: 8px 16px;
+    background-color: #ff4e2e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@ nav {
 }
 
 #home-button:hover {
-    background-color: #ff4500;
+    background-color: #e03c00;
 }
 
 #nav-ul {
@@ -227,7 +227,7 @@ main {
 #back-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff6347;
+    background-color: #ff4e2e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -237,7 +237,7 @@ main {
 }
 
 #back-button:hover {
-    background-color: #ff4500;
+    background-color: #e03c00;
 }
 
 #pagination {
