@@ -93,7 +93,7 @@ function displayNavLabels() {
 
     // Add "Jobs" option at the end
     const jobsItem = document.createElement("li");
-    jobsItem.innerHTML = `<a href="/jobs.html">Jobs</a>`;
+    jobsItem.innerHTML = `<a href="/jobs/index.html">Jobs</a>`;
     navList.appendChild(jobsItem);
 }
 
