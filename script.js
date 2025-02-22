@@ -4,7 +4,7 @@ const articlesPerPage = 5;
 
 async function fetchArticles() {
     try {
-        const res = await fetch('./news.json');
+        const res = await fetch('/news.json');
         if (!res.ok) throw new Error(`Error ${res.status}`);
 
         const jsondata = await res.json();
@@ -33,7 +33,7 @@ function displayArticles(filteredArticles = allArticles) {
 
     articlesToShow.forEach(article => {
         const articleElement = document.createElement("a");
-        articleElement.href = `article.html?id=${article.number}`;
+        articleElement.href = `/article.html?id=${article.number}`;
         articleElement.classList.add("article");
 
         articleElement.innerHTML = `
@@ -57,7 +57,7 @@ function displayAsideArticles() {
     const latestArticles = allArticles.slice(0, 5);
     latestArticles.forEach(article => {
         const asideLink = document.createElement("a");
-        asideLink.href = `article.html?id=${article.number}`;
+        asideLink.href = `/article.html?id=${article.number}`;
         asideLink.innerText = article.title;
         asideDiv.appendChild(asideLink);
     });
@@ -93,7 +93,7 @@ function displayNavLabels() {
 
     // Add "Jobs" option at the end
     const jobsItem = document.createElement("li");
-    jobsItem.innerHTML = `<a href="jobs.html">Jobs</a>`;
+    jobsItem.innerHTML = `<a href="/jobs.html">Jobs</a>`;
     navList.appendChild(jobsItem);
 }
 
@@ -169,7 +169,7 @@ function displaySuggestedArticles(currentArticleId) {
     const suggestedArticles = allArticles.filter(article => article.number !== parseInt(currentArticleId)).slice(0, 5);
     suggestedArticles.forEach(article => {
         const articleElement = document.createElement("a");
-        articleElement.href = `article.html?id=${article.number}`;
+        articleElement.href = `/article.html?id=${article.number}`;
 
         articleElement.innerHTML = `
             <img src="${article.image}" alt="${article.title}">
