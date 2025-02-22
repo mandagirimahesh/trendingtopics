@@ -1,7 +1,4 @@
-[build]
-  publish = "/"
-
-[[headers]]
-  for = "/sitemap.xml"
-    [headers.values]
-    Content-Type = "application/xml"
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+[plugins.inputs]
+baseUrl = "https://playmorefree.netlify.app"
