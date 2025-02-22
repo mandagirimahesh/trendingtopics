@@ -90,6 +90,11 @@ function displayNavLabels() {
         });
         navList.appendChild(listItem);
     });
+
+    // Add "Jobs" option at the end
+    const jobsItem = document.createElement("li");
+    jobsItem.innerHTML = `<a href="jobs.html">Jobs</a>`;
+    navList.appendChild(jobsItem);
 }
 
 function setupSearch() {
@@ -111,6 +116,17 @@ function setupSearch() {
         if (e.key === 'Enter') {
             searchButton.click();
         }
+    });
+
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredArticles = allArticles.filter(article =>
+            article.title.toLowerCase().includes(searchTerm) ||
+            article.body.toLowerCase().includes(searchTerm)
+        );
+        currentPage = 1;
+        displayArticles(filteredArticles);
+        setupPagination(filteredArticles);
     });
 }
 
@@ -164,6 +180,19 @@ function displaySuggestedArticles(currentArticleId) {
 
         suggestionsDiv.appendChild(articleElement);
     });
+}
+
+function searchArticles() {
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const filteredArticles = allArticles.filter(article => {
+        return article.title.toLowerCase().includes(searchTerm) ||
+            article.body.toLowerCase().includes(searchTerm) ||
+            article.label.toLowerCase().includes(searchTerm);
+    });
+
+    currentPage = 1;
+    displayArticles(filteredArticles, currentPage);
+    setupPagination(filteredArticles);
 }
 
 fetchArticles();
