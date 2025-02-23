@@ -220,8 +220,14 @@ main {
 #article-body {
     font-size: 1.1rem;
     color: #444;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
+}
+
+#article-body p {
+    margin-bottom: 15px;
+    /* Increased paragraph margin */
 }
 
 #back-button {

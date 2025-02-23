@@ -155,7 +155,12 @@ function loadArticle() {
     if (article) {
         document.getElementById('article-title').textContent = article.title;
         document.getElementById('article-image').innerHTML = `<img src="${article.image}" alt="${article.title}">`;
-        document.getElementById('article-body').textContent = article.body;
+
+        // Format the article body
+        let formattedBody = article.body.replace(/—/g, ''); // Remove long hyphens
+        formattedBody = formattedBody.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+        document.getElementById('article-body').innerHTML = formattedBody;
+
         displaySuggestedArticles(articleId);
     } else {
         document.getElementById('article-title').textContent = "Article Not Found";
