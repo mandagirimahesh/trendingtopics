@@ -5,12 +5,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     min-height: 100vh;
-    /* Ensure the body takes at least the full viewport height */
     display: flex;
     flex-direction: column;
-    /* Stack the header, main, and footer vertically */
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
 }
 
 header {
@@ -59,6 +56,38 @@ search-bar {
 
 main {
     padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+aside h2 {
+    margin-bottom: 15px;
+}
+
+/* Hide the aside on smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
 }
 
 #job-list {
@@ -66,9 +95,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-    /* Take full width */
     justify-content: center;
-    /* Center the items horizontally */
 }
 
 .job-item {
@@ -78,11 +105,8 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     width: 300px;
-    /* Fixed width for job items */
     margin-left: 5px;
-    /* control horizontal spacing */
     margin-right: 5px;
-    /* control horizontal spacing */
     box-sizing: border-box;
 }
 
@@ -100,7 +124,6 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: auto;
-    /* Push the footer to the bottom */
     width: 100%;
 }
 
@@ -122,10 +145,42 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    height: auto;
 }
 
 #apply-button:hover {
     background-color: #555;
+}
+
+/* Apply and Share Button Container */
+.apply-share-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Share Button Styles */
+#share-button {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#share-button:hover {
+    background-color: black;
+    color: #fff;
 }
 
 /* Registration Form Styles */
@@ -168,6 +223,74 @@ footer {
     background-color: #555;
 }
 
+/* Share Buttons Styles */
+.share-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.share-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+
+.share-buttons a:hover {
+    background-color: #ddd;
+}
+
+.share-buttons .material-icons {
+    font-size: 24px;
+}
+
+.share-buttons img {
+    border-radius: 5px;
+}
+
+/* About Us Section */
+#about-us {
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#about-us h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-us iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 400px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     nav ul li a {
         color: #fff;
@@ -179,5 +302,13 @@ footer {
     nav ul li {
         margin: 0 10px;
     }
+}
 
+/* Limit description to two lines */
+.description-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

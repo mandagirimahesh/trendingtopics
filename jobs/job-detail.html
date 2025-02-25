@@ -9,6 +9,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2648616140569696"
         crossorigin="anonymous"></script>
     <meta name="robots" content="index, follow, sitemap=https://playmorefree.netlify.app/sitemap.xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -22,30 +23,43 @@
     </header>
 
     <main>
-        <section id="job-details">
-            <h2 id="job-title"></h2>
-            <p id="job-description"></p>
-            <p><strong>Type:</strong> <span id="job-type"></span></p>
-            <p><strong>Qualifications:</strong> <span id="job-qualification"></span></p>
-            <p><strong>Date Posted:</strong> <span id="job-date"></span></p>
-            <p><strong>Details:</strong> <span id="job-details-content"></span></p>
-            <a id="apply-link" href="#" target="_blank">
-                <button id="apply-button">Apply Now</button>
-            </a>
-        </section>
-        <section id="registration-form">
-            <h2>Register for More Updates</h2>
-            <form id="registrationForm">
-                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
-                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
-                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Your WhatsApp Number" required><br><br>
-                <button type="submit">Register</button>
-            </form>
-        </section>
-        <section id="about-us">
-            <h2>About Us</h2>
-            <iframe src="about.html" width="100%" height="400px"></iframe>
-        </section>
+        <div class="main-content">
+            <section id="job-details">
+                <h2 id="job-title"></h2>
+                <p id="job-description"></p>
+                <p><strong>Type:</strong> <span id="job-type"></span></p>
+                <p><strong>Qualifications:</strong> <span id="job-qualification"></span></p>
+                <p><strong>Date Posted:</strong> <span id="job-date"></span></p>
+                <p><strong>Details:</strong> <span id="job-details-content"></span></p>
+                <div class="apply-share-container">
+                    <a id="apply-link" href="#" target="_blank">
+                        <button id="apply-button">Apply Now</button>
+                    </a>
+                    <button id="share-button" aria-label="Share this job">
+                        <span class="material-icons">share</span>
+                    </button>
+                </div>
+            </section>
+            <section id="registration-form">
+                <h2>Register for More Updates</h2>
+                <form id="registrationForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Your WhatsApp Number" required><br><br>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+            <section id="about-us">
+                <h2>About Us</h2>
+                <iframe src="about.html" width="100%" height="400px"></iframe>
+            </section>
+        </div>
+        <aside id="similar-jobs">
+            <h2>Similar Jobs</h2>
+            <div id="similar-jobs-list">
+                <!-- Similar jobs will be dynamically populated here -->
+            </div>
+        </aside>
     </main>
 
     <footer>

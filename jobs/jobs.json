@@ -1,6 +1,176 @@
 [
   {
     "id": 1,
+    "title": "Java Full Stack Developer (Contract)",
+    "type": "Contract",
+    "description": "Contract role to develop web applications using Java and React.",
+    "details": "Short-term engagement focusing on rapid prototyping and deployment.",
+    "qualification": "Bachelor's in CS; contract experience required.",
+    "link": "https://contracttechjobs.com/apply/java-full-stack-21",
+    "date": "2023-10-21"
+  },
+  {
+    "id": 2,
+    "title": "Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Build enterprise-level web applications using Java, Spring Boot, and Angular.",
+    "details": "Collaborate with product and design teams to create robust software solutions.",
+    "qualification": "Bachelor's degree; 4+ years experience; strong communication skills.",
+    "link": "https://innovatejobsdirect.com/jobs/java-full-stack-29",
+    "date": "2023-10-29"
+  },
+  {
+    "id": 3,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Develop comprehensive web applications using Java, Spring Boot, and Vue.js.",
+    "details": "Work on both frontend and backend components in a collaborative environment.",
+    "qualification": "Bachelor's degree; 3+ years experience; familiarity with Agile methodologies.",
+    "link": "https://careerportaldirect.com/apply/java-full-stack-30",
+    "date": "2023-10-30"
+  },
+  {
+    "id": 4,
+    "title": "Senior Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Lead the development of full-stack solutions using Java and Angular.",
+    "details": "Manage a team and oversee project delivery from conception to deployment.",
+    "qualification": "Master's degree preferred; 6+ years experience; proven leadership.",
+    "link": "https://companycareersite4.com/careers/java-full-stack-25",
+    "date": "2023-10-25"
+  },
+  {
+    "id": 5,
+    "title": "Java Full Stack Developer (Remote)",
+    "type": "Remote",
+    "description": "Develop full-stack web applications remotely using Java, Spring Boot, and React.",
+    "details": "Collaborate with distributed teams and use modern DevOps practices.",
+    "qualification": "Bachelor's in CS; remote work experience is advantageous.",
+    "link": "https://remotecareersdirect.com/jobs/java-full-stack-26",
+    "date": "2023-10-26"
+  },
+  {
+    "id": 6,
+    "title": "Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Develop innovative web applications using Java, Spring, and Angular.",
+    "details": "Engage in full project lifecycle from design to deployment.",
+    "qualification": "Bachelor's degree; 3+ years experience; excellent problem-solving skills.",
+    "link": "https://techjobshub.com/apply/java-full-stack-27",
+    "date": "2023-10-27"
+  },
+  {
+    "id": 7,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Join a dynamic team to build and maintain scalable web applications using Java and React.",
+    "details": "Work in an agile environment and contribute to continuous improvement.",
+    "qualification": "Bachelor's in Computer Science; 3+ years experience in full-stack development.",
+    "link": "https://directhiring.com/careers/java-full-stack-28",
+    "date": "2023-10-28"
+  },
+  {
+    "id": 8,
+    "title": "Junior Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Assist in building and maintaining full-stack applications with Java and Angular.",
+    "details": "Work closely with senior developers and gain hands-on experience.",
+    "qualification": "Bachelor's degree or diploma; 1-2 years experience preferred.",
+    "link": "https://entryleveljobs.com/careers/java-full-stack-22",
+    "date": "2023-10-22"
+  },
+  {
+    "id": 9,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Develop and maintain complex web applications using Java, Spring Boot, and React.",
+    "details": "Collaborate with product managers and designers to implement features.",
+    "qualification": "Bachelor's degree; 3+ years experience; familiarity with cloud services.",
+    "link": "https://techcareerhub.com/jobs/java-full-stack-23",
+    "date": "2023-10-23"
+  },
+  {
+    "id": 10,
+    "title": "Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Design, develop, and deploy web applications using Java and Vue.js.",
+    "details": "Work on scalable solutions and improve application performance.",
+    "qualification": "Bachelor's in Computer Science; 4+ years experience.",
+    "link": "https://directjobportal.com/apply/java-full-stack-24",
+    "date": "2023-10-24"
+  },
+  {
+    "id": 11,
+    "title": "Remote Java Full Stack Developer",
+    "type": "Remote",
+    "description": "Work from anywhere developing full-stack applications using Java and React.",
+    "details": "Engage with distributed teams and use cloud-based tools for collaboration.",
+    "qualification": "Bachelor's degree; remote work experience is a plus.",
+    "link": "https://remoteworkcareers.com/jobs/java-full-stack-16",
+    "date": "2023-10-16"
+  },
+  {
+    "id": 12,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Design and implement end-to-end web solutions using Java, Spring Boot, and Angular.",
+    "details": "Focus on microservices architecture and API integrations.",
+    "qualification": "Bachelor's degree; 3+ years experience; familiarity with RESTful services.",
+    "link": "https://techjobsportal.com/apply/java-full-stack-17",
+    "date": "2023-10-17"
+  },
+  {
+    "id": 13,
+    "title": "Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Develop modern web applications with Java, Spring Boot, and React.",
+    "details": "Collaborate with a team to deliver robust, scalable software solutions.",
+    "qualification": "Bachelor's degree in CS; 4+ years experience.",
+    "link": "https://innovativecareers.com/jobs/java-full-stack-18",
+    "date": "2023-10-18"
+  },
+  {
+    "id": 14,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Implement and maintain web applications using Java and Angular.",
+    "details": "Work on both server-side logic and client-side interface design.",
+    "qualification": "Bachelor's degree; 3+ years professional experience.",
+    "link": "https://directcareerportal.com/apply/java-full-stack-19",
+    "date": "2023-10-19"
+  },
+  {
+    "id": 15,
+    "title": "Senior Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Design and implement complex full-stack systems using Java and React.",
+    "details": "Focus on optimizing performance and scalability of applications.",
+    "qualification": "Master's degree in CS; 5+ years professional experience.",
+    "link": "https://companycareersite2.com/apply/java-full-stack-11",
+    "date": "2023-10-11"
+  },
+  {
+    "id": 16,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Join a dynamic team to develop web applications using Java and Angular.",
+    "details": "Work on both backend and frontend tasks and collaborate with cross-functional teams.",
+    "qualification": "Bachelor's degree; 3+ years experience with Java frameworks.",
+    "link": "https://directhirejobs.com/careers/java-full-stack-12",
+    "date": "2023-10-12"
+  },
+  {
+    "id": 17,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Develop and support enterprise-grade applications using Java and Vue.js.",
+    "details": "Collaborate with UX/UI teams to build responsive interfaces.",
+    "qualification": "Bachelor's in Engineering; 3+ years experience; strong problem-solving skills.",
+    "link": "https://startupjobsdirect.com/apply/java-full-stack-15",
+    "date": "2023-10-15"
+  },
+  {
+    "id": 18,
     "title": "IT Support Specialist",
     "type": "full-time",
     "description": "Install and configure software and hardware solutions, focusing on client digital signatures and overall technological support.",
@@ -10,7 +180,7 @@
     "date": "2025-02-17"
   },
   {
-    "id": 2,
+    "id": 19,
     "title": "Receptionist/Administrator",
     "type": "full-time",
     "description": "Handle both incoming and outgoing calls.",
@@ -20,7 +190,7 @@
     "date": "2025-02-15"
   },
   {
-    "id": 3,
+    "id": 20,
     "title": "Domestic IT Recruiter",
     "type": "full-time",
     "description": "Proficiency in using job portals and applicant tracking systems (ATS).",
@@ -30,7 +200,7 @@
     "date": "2025-02-18"
   },
   {
-    "id": 4,
+    "id": 21,
     "title": "IT Helpdesk Coordinator",
     "type": "full-time",
     "description": "Serve as the first point of contact for internal IT-related inquiries.",
@@ -40,7 +210,7 @@
     "date": "2025-02-16"
   },
   {
-    "id": 5,
+    "id": 22,
     "title": "IT Executive",
     "type": "full-time",
     "description": "Provide technical support to employees regarding software, hardware, and network-related issues.",
@@ -50,7 +220,7 @@
     "date": "2025-02-18"
   },
   {
-    "id": 6,
+    "id": 23,
     "title": "Freshers Hiring for IT Positions - Pronix Talent Hunt",
     "type": "full-time",
     "description": "Software Development Engineers (Entry Level/Junior Level).",
@@ -60,7 +230,7 @@
     "date": "2025-01-19"
   },
   {
-    "id": 7,
+    "id": 24,
     "title": "IT Support Engineer",
     "type": "full-time",
     "description": "Experience in telephony – Pbx/IP / networking /wifi.",
@@ -70,7 +240,7 @@
     "date": "2025-02-16"
   },
   {
-    "id": 8,
+    "id": 25,
     "title": "Assistant Manager - IT",
     "type": "full-time",
     "description": "Daily monitoring of servers and network.",
@@ -80,7 +250,7 @@
     "date": "2025-02-15"
   },
   {
-    "id": 9,
+    "id": 26,
     "title": "IT Executive",
     "type": "full-time",
     "description": "Provide technical support to employees regarding software, hardware, and network-related issues.",
@@ -90,7 +260,7 @@
     "date": "2025-02-15"
   },
   {
-    "id": 10,
+    "id": 27,
     "title": "IT Engineer",
     "type": "full-time",
     "description": "Database management using MS SQL Server.",
@@ -100,7 +270,7 @@
     "date": "2025-02-14"
   },
   {
-    "id": 1,
+    "id": 28,
     "title": "Frontend Engineer",
     "type": "full-time",
     "description": "Develop and maintain scalable, high-performance web applications that deliver seamless user experiences.",
@@ -110,7 +280,7 @@
     "date": "2024-11-25"
   },
   {
-    "id": 2,
+    "id": 29,
     "title": "Front End Developer",
     "type": "full-time",
     "description": "Design and develop dynamic, high-performing platforms using Next.js.",
@@ -120,7 +290,7 @@
     "date": "2024-12-01"
   },
   {
-    "id": 3,
+    "id": 30,
     "title": "Junior Front End Developer",
     "type": "full-time",
     "description": "Developing and maintaining web applications optimized for various devices and browsers.",
@@ -130,7 +300,7 @@
     "date": "2024-12-15"
   },
   {
-    "id": 4,
+    "id": 31,
     "title": "Front-end Developer",
     "type": "full-time",
     "description": "Develop front-end application features using HTML5, CSS3, and JavaScript.",
@@ -140,7 +310,7 @@
     "date": "2024-12-20"
   },
   {
-    "id": 5,
+    "id": 32,
     "title": "FRONT-END DEVELOPER",
     "type": "full-time",
     "description": "Integrate front-end design into backend work and ensure responsive, clean code.",
@@ -150,7 +320,7 @@
     "date": "2024-12-10"
   },
   {
-    "id": 6,
+    "id": 33,
     "title": "Front-end Developer",
     "type": "full-time",
     "description": "Develop web applications using HTML, CSS, Bootstrap, and JavaScript.",
@@ -160,7 +330,7 @@
     "date": "2024-12-18"
   },
   {
-    "id": 7,
+    "id": 34,
     "title": "Front End Developer",
     "type": "full-time",
     "description": "Design and develop web applications using AngularJS 6 or above.",
@@ -170,7 +340,7 @@
     "date": "2024-12-22"
   },
   {
-    "id": 8,
+    "id": 35,
     "title": "Frontend Developer",
     "type": "full-time",
     "description": "Develop and maintain user-facing features for web applications.",
@@ -180,7 +350,7 @@
     "date": "2024-12-05"
   },
   {
-    "id": 9,
+    "id": 36,
     "title": "Senior Front End Developer",
     "type": "full-time",
     "description": "Lead the development of complex web applications with a focus on performance and scalability.",
@@ -190,7 +360,7 @@
     "date": "2024-12-08"
   },
   {
-    "id": 10,
+    "id": 37,
     "title": "React.js Developer",
     "type": "full-time",
     "description": "Develop new user-facing features using React.js.",
@@ -198,5 +368,35 @@
     "qualification": "Strong proficiency in JavaScript and experience with React.js.",
     "link": "https://cutshort.io/job/Frontend-Developer-Analytics-Hyderabad-Invesco-ik1JmiB8",
     "date": "2024-12-12"
+  },
+  {
+    "id": 38,
+    "title": "Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Develop and maintain full-stack applications using Java, Spring Boot, and Angular.",
+    "details": "Work on end-to-end project lifecycle, including design, development, and deployment.",
+    "qualification": "Bachelor's in Computer Science or related field; 3+ years experience.",
+    "link": "https://companycareersite1.com/apply/java-full-stack-1",
+    "date": "2023-10-01"
+  },
+  {
+    "id": 39,
+    "title": "Senior Java Full Stack Developer",
+    "type": "Full-time",
+    "description": "Lead the development of enterprise-level applications using Java and React.",
+    "details": "Coordinate with cross-functional teams and mentor junior developers.",
+    "qualification": "Bachelor's/Master's in CS; 5+ years experience; leadership skills.",
+    "link": "https://directhire.com/careers/java-full-stack-2",
+    "date": "2023-10-02"
+  },
+  {
+    "id": 40,
+    "title": "Java Full Stack Engineer",
+    "type": "Full-time",
+    "description": "Design and build scalable web applications with Java and Vue.js.",
+    "details": "Implement REST APIs, integrate with databases, and ensure high performance.",
+    "qualification": "Bachelor's in Computer Science; 3+ years relevant experience.",
+    "link": "https://techinnovators.com/jobs/java-full-stack-3",
+    "date": "2023-10-03"
   }
 ]
