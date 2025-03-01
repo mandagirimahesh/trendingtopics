@@ -31,7 +31,7 @@ function displayArticles(filteredArticles = allArticles) {
     const end = start + articlesPerPage;
     const articlesToShow = filteredArticles.slice(start, end);
 
-    articlesToShow.forEach(article => {
+    articlesToShow.forEach((article, index) => {
         const articleElement = document.createElement("a");
         articleElement.href = `/article.html?id=${article.number}`;
         articleElement.classList.add("article");
@@ -45,6 +45,23 @@ function displayArticles(filteredArticles = allArticles) {
         `;
 
         articlesDiv.appendChild(articleElement);
+
+        // Insert advertisement code between every article
+        if (index < articlesToShow.length - 1) {
+            const adContainer = document.createElement('div');
+            adContainer.innerHTML = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2648616140569696"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-gd-2j+5l-fb+by"
+     data-ad-client="ca-pub-2648616140569696"
+     data-ad-slot="5834926392"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`;
+            articlesDiv.appendChild(adContainer);
+        }
     });
 
     setupPagination(filteredArticles);
@@ -153,6 +170,7 @@ function loadArticle() {
 
     const article = allArticles.find(article => article.number === parseInt(articleId));
     if (article) {
+        document.getElementsByTagName('title')[0].textContent = article.title;
         document.getElementById('article-title').textContent = article.title;
         document.getElementById('article-image').innerHTML = `<img src="${article.image}" alt="${article.title}">`;
 

@@ -24,7 +24,7 @@ header h1 {
 }
 
 nav {
-    background-color: #444;
+    /* background-color: #444; */
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ nav {
 
 #home-button {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 6px 12px;
     background-color: #ff4e2e;
     color: #fff;
     text-decoration: none;
@@ -160,10 +160,11 @@ main {
 }
 
 #suggested-articles img {
-    width: 60px;
+    width: 80px;
     height: 60px;
     border-radius: 5px;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 #suggested-articles a div {

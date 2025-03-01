@@ -1,0 +1,302 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: #333;
+}
+
+/* Updated Header Styles */
+header {
+    background-color: #2c3e50;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Navigation inside header */
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #f0db4f;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e0c068;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* New container for job details and similar jobs */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* For larger screens, display as two columns */
+@media screen and (min-width: 992px) {
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .left-content {
+        flex: 3;
+    }
+
+    aside#similar-jobs {
+        flex: 1;
+        align-self: flex-start;
+    }
+}
+
+/* Job Detail Page Styles */
+#job-details {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#job-details h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#job-details p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+#job-details strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+#apply-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+#apply-button:hover {
+    background-color: #555;
+}
+
+/* Apply and Share Button Container */
+.apply-share-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Share Button Styles */
+#share-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#share-button:hover {
+    background-color: #2980b9;
+}
+
+/* Registration Form Styles */
+#registration-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#registration-form h2 {
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    color: #2c3e50;
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#registration-form input[type="text"]:focus,
+#registration-form input[type="email"]:focus,
+#registration-form input[type="tel"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#registration-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#registration-form button:hover {
+    background-color: #2980b9;
+}
+
+/* About Us Section */
+#about-us {
+    margin-top: 40px;
+    width: 100%;
+    /* Take full width */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    padding: 20px;
+    /* Add padding to the section */
+}
+
+#about-us h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-us iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Make the iframe take full width */
+    height: 400px;
+    /* set a fixed height */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Similar Jobs Section */
+aside#similar-jobs {
+    background-color: #f9f9f9;
+    /* Lighter background */
+    padding: 20px;
+    border-radius: 8px;
+    /* More rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+}
+
+aside#similar-jobs h2 {
+    font-size: 1.6em;
+    /* Smaller heading */
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    /* Add a subtle border */
+    padding-bottom: 5px;
+}
+
+aside#similar-jobs .job-item {
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* Add spacing between items */
+}
+
+aside#similar-jobs .job-item:last-child {
+    margin-bottom: 0;
+    /* Remove margin from the last item */
+}
+
+aside#similar-jobs .job-item h3 {
+    font-size: 1.2em;
+    /* Smaller title */
+    color: #2c3e50;
+    line-height: 1.3;
+    /* Adjust line height */
+    margin-bottom: 5px;
+    /* Reduce space between title and description */
+}
+
+aside#similar-jobs .job-item p.description-line {
+    font-size: 0.9em;
+    /* Smaller description */
+    line-height: 1.4;
+    /* Adjust line height */
+    color: #555;
+}
+
+aside#similar-jobs .job-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
