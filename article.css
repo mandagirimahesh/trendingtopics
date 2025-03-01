@@ -6,6 +6,9 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -14,7 +17,7 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 1em 0;
     text-align: center;
 }
 
@@ -24,13 +27,25 @@ header h1 {
 }
 
 nav {
-    /* background-color: #444; */
-    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    padding: 0.5em 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
 }
 
 #home-button {
@@ -75,7 +90,6 @@ nav {
 
 main {
     display: flex;
-    gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +99,8 @@ main {
 }
 
 #article-content {
-    flex: 2;
+    flex: 3;
+    padding-right: 20px;
     min-width: 50%;
     display: flex;
     flex-direction: column;
@@ -93,12 +108,27 @@ main {
     padding: 20px;
 }
 
+#article-content h1 {
+    margin-top: 0;
+}
+
+#article-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#article-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
 #suggestions {
     flex: 1;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     height: fit-content;
     position: sticky;
@@ -117,7 +147,10 @@ main {
 }
 
 #suggestions h2 {
-    margin-bottom: 20px;
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 1.5rem;
 }
 
@@ -144,27 +177,23 @@ main {
 }
 
 #suggested-articles a {
-    display: flex;
-    align-items: center;
+    display: block;
+    margin-bottom: 10px;
     text-decoration: none;
-    color: inherit;
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 5px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
 }
 
 #suggested-articles a:hover {
-    background-color: #e0e0e0;
+    color: #0056b3;
 }
 
 #suggested-articles img {
-    width: 80px;
-    height: 60px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    margin-right: 10px;
-    object-fit: cover;
+    margin-bottom: 5px;
 }
 
 #suggested-articles a div {
@@ -234,17 +263,17 @@ main {
 #back-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4e2e;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    align-self: flex-start;
     margin-top: 20px;
+    margin-bottom: 20px;
+    /* Added margin to ensure visibility */
 }
 
 #back-button:hover {
-    background-color: #e03c00;
+    background-color: #367c39;
 }
 
 #pagination {
@@ -273,9 +302,70 @@ main {
 }
 
 footer {
+    text-align: center;
+    padding: 1em 0;
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    /* position: fixed; */
+    /* Removed fixed positioning */
+    bottom: 0;
+    width: 100%;
     margin-top: 20px;
+    /* Add margin top */
+}
+
+/* Mobile Menu Toggle */
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Nav Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.75em 1em;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a#home-button {
+        padding: 0.75em 1em;
+    }
+
+    #menu-toggle {
+        display: flex;
+        align-self: flex-end;
+        padding: 0.75em 1em;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
 }

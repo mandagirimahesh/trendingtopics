@@ -5,6 +5,7 @@ document.getElementById('registrationForm').addEventListener('submit', function 
     const email = document.getElementById('email').value;
     const whatsapp = document.getElementById('whatsapp').value;
 
+    // Replace with your Google Sheet Web App URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbziHzr4BFF7BWeHWuDqXIjrDoG1NSaWRbjihqwbZIsSXJ8Lp96adlc4omRQNsW7K4E/exec';
 
     const formData = new FormData();

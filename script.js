@@ -36,11 +36,14 @@ function displayArticles(filteredArticles = allArticles) {
         articleElement.href = `/article.html?id=${article.number}`;
         articleElement.classList.add("article");
 
+        const keywordsHTML = article.keywords.map(keyword => `<span>${keyword}</span>`).join('');
+
         articleElement.innerHTML = `
             <img src="${article.image}" alt="${article.title}">
             <div>
                 <h2>${article.title}</h2>
                 <p>${article.body.substring(0, 150)}...</p>
+                <div class="keywords">${keywordsHTML}</div>
             </div>
         `;
 
@@ -178,6 +181,12 @@ function loadArticle() {
         let formattedBody = article.body.replace(/—/g, ''); // Remove long hyphens
         formattedBody = formattedBody.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('');
         document.getElementById('article-body').innerHTML = formattedBody;
+
+        // Add meta keywords tag
+        const metaKeywords = document.createElement('meta');
+        metaKeywords.name = "keywords";
+        metaKeywords.content = article.keywords.join(', ');
+        document.getElementsByTagName('head')[0].appendChild(metaKeywords);
 
         displaySuggestedArticles(articleId);
     } else {
