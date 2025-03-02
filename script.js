@@ -176,8 +176,9 @@ function loadArticle() {
         document.getElementById('article-title').textContent = article.title;
         document.getElementById('article-image').innerHTML = `<img src="${article.image}" alt="${article.title}">`;
 
-        // Format the article body
-        let formattedBody = article.body.replace(/—/g, ''); // Remove long hyphens
+        // Format the article body: remove long hyphens and convert *text* or **text** to italic
+        let formattedBody = article.body.replace(/—/g, '');
+        formattedBody = formattedBody.replace(/\*([^*]+)\*/g, '<em>$1</em>');
         formattedBody = formattedBody.split('\n\n').map(paragraph => `<p>${paragraph}</p>`).join('');
         document.getElementById('article-body').innerHTML = formattedBody;
 
