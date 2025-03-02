@@ -43,7 +43,6 @@ function displayArticles(filteredArticles = allArticles) {
             <div>
                 <h2>${article.title}</h2>
                 <p>${article.body.substring(0, 150)}...</p>
-                <div class="keywords">${keywordsHTML}</div>
             </div>
         `;
 
