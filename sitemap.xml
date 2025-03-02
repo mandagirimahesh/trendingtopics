@@ -11,12 +11,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- <url>
-        <loc>https://playmorefree.netlify.app/google8875f9a047d694fd</loc>
-        <lastmod>2025-03-01T02:41:47Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url> -->
+
     <url>
         <loc>https://playmorefree.netlify.app/</loc>
         <lastmod>2025-03-01T02:41:47Z</lastmod>
